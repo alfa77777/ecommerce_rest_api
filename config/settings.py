@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'dj_rest_auth',
+    'django_filters',
 
     # Local apps
     "common",
@@ -166,3 +167,6 @@ EMAIL_PORT = env("EMAIL_PORT")
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_USE_TLS = True
+
+MEDIA_URL = "media/"
+MEDIA_ROOT = BASE_DIR / 'media'
